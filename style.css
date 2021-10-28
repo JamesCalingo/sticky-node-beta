@@ -3,7 +3,7 @@ body {
 }
 
 .board {
-  display: flex;
+  display: block;
   justify-content: space-evenly;
 }
 
@@ -14,9 +14,10 @@ body {
   border: 2px solid black;
   box-shadow: 5px 5px 5px black;
 
+  margin: 25px;
+  padding: 10px;
   font-family: sans-serif;
   font-size: 16pt;
-  padding: 10px;
   overflow-y: scroll;
   resize: none
 }
