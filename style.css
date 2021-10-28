@@ -1,0 +1,22 @@
+body {
+  background: chocolate
+}
+
+.board {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sticky{
+  background: yellowgreen;
+  font-family: sans-serif;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  padding: 10px;
+  overflow-y: scroll
+}
+
+::-webkit-scrollbar {
+  background: yellowgreen;
+}
