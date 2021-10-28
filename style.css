@@ -1,5 +1,6 @@
 body {
-  background: chocolate
+  background: chocolate;
+  font-family: sans-serif;
 }
 
 .board {
@@ -16,7 +17,7 @@ body {
 
   margin: 25px;
   padding: 10px;
-  font-family: sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
   font-size: 16pt;
   overflow-y: scroll;
   resize: none
