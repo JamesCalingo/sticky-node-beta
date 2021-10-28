@@ -21,8 +21,18 @@ body {
   resize: none
 }
 
+button {
+  position: absolute;
+  left: 50%;
+  
+}
 
-
-::-webkit-scrollbar {
+.sticky::-webkit-scrollbar {
   background: yellowgreen;
+}
+
+@media only screen and (max-width: 1000px) {
+  .board {
+    display:block
+  }
 }
