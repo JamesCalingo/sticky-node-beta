@@ -1,6 +1,6 @@
 const addBtn = document.querySelector("#add-note");
 const saveBtn = document.querySelector("#save-note");
-const deleteBtn = document.querySelector(".delete-btn-0")
+
 const board = document.querySelector(".board");
 let idNumber = 1;
 
@@ -40,7 +40,6 @@ function deleteNote(event) {
   const idToDelete = this.classList[1]
   const noteToDelete = document.getElementsByClassName(idToDelete)
   while(noteToDelete.length > 0){
-    console.log(noteToDelete[0], noteToDelete[0].parentNode)
     noteToDelete[0].parentNode.removeChild(noteToDelete[0]);
 }
 }
@@ -48,4 +47,7 @@ function deleteNote(event) {
 
 addBtn.addEventListener("click", createNewNote);
 saveBtn.addEventListener("click", saveNotes);
+
+// This is for the note that appears when the app is loaded
+const deleteBtn = document.querySelector(".delete-btn-0")
 deleteBtn.addEventListener("click", deleteNote)
