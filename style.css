@@ -1,6 +1,6 @@
 body {
-  background: chocolate;
   font-family: sans-serif;
+  background: chocolate;
 }
 
 .board {
@@ -8,7 +8,20 @@ body {
   justify-content: space-evenly;
 }
 
+header {
+  text-align: center;
+  background: wheat;
+  margin-bottom: 20px;
+}
+
+button {
+  background: green;
+  font-size: 20pt;
+  color: white;
+}
+
 .sticky{
+  /* position: absolute; */
   background: yellowgreen;
   width: 300px;
   height: 300px;
@@ -17,7 +30,7 @@ body {
 
   margin: 25px;
   padding: 10px;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Gloria Hallelujah', sans-serif;
   font-size: 16pt;
   overflow-y: scroll;
   resize: none
