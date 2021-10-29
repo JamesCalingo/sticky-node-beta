@@ -36,10 +36,9 @@ button {
   resize: none
 }
 
-button {
- 
-  left: 50%;
-  
+.delete-btn {
+  background: red;
+  margin-left: -200px
 }
 
 .sticky::-webkit-scrollbar {
