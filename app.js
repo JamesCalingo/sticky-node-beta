@@ -10,19 +10,23 @@ function createNewNote(event) {
   event.preventDefault();
 
   const note = document.createElement("textarea");
-  const button = document.createElement("button");
   note.classList.add("sticky", "note" + idNumber);
   note.placeholder = "Write your note here";
+
+  const button = document.createElement("button");
   button.classList.add("delete-btn", "note" + idNumber);
   button.addEventListener("click", deleteNote);
   button.innerHTML = "Delete this note";
+
   board.appendChild(note);
   board.appendChild(button);
+
   idNumber++;
 }
 
 function saveNotes(event) {
   event.preventDefault();
+  
   let notes = document.querySelectorAll("textarea");
   let noteVals = [];
   notes.forEach((note) => {
