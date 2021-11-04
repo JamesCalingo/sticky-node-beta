@@ -4,6 +4,11 @@ const saveBtn = document.querySelector("#save-note");
 const board = document.querySelector(".board");
 let idNumber = 1;
 
+function incrementID(currentID) {
+  currentID++
+  return currentID
+}
+
 const storedNotes = JSON.parse(localStorage.getItem("notes"));
 
 function createNewNote(event) {
@@ -21,12 +26,12 @@ function createNewNote(event) {
   board.appendChild(note);
   board.appendChild(button);
 
-  idNumber++;
+  idNumber++
 }
 
 function saveNotes(event) {
   event.preventDefault();
-  
+
   let notes = document.querySelectorAll("textarea");
   let noteVals = [];
   notes.forEach((note) => {
